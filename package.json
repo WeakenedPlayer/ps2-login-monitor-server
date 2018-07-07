@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "wbuild": "webpack --watch --config webpack.config.js",
+    "test": "node-dev ../dist/main",
+    "start": "node ../dist/main"
+  },
+  "main": "../dist/main",
+  "dependencies": {
+    "@weakenedplayer/census-api": "^0.4.0",
+    "@weakenedplayer/websocket-wrapper": "0.0.5",
+    "discord.js": "^11.3.2",
+    "request": "^2.87.0",
+    "rxjs": "^6.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "~6.0.60",
+    "ts-loader": "^4.1.0",
+    "typescript": "~2.5.3",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
